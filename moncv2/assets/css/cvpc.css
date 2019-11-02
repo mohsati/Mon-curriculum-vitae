@@ -1,0 +1,54 @@
+/* tous écrans PC d’au moins 400px */
+@media screen and (min-width:400px){
+
+    /* titre et bloc main à gauche */
+    body>header, main{
+        display: block;
+        float:left;
+        width:73% ; /* 750px/1026px */
+    }
+
+    /* bloc photo + adresse  et divers */
+    #civil, #divers, #contact {
+        float:right;
+        width: 24%; /*250px/1026 ;*/
+        background-color: blue;
+        color:white;
+        padding: 0.5em  0.8% ; /*8px/16px 8px/1026px;*/
+    }
+
+    /* photo identité */
+    #civil>img {
+        display: block;
+        width:95%;
+        margin:auto;
+        border: 3px solid white;
+        border-radius: 5px;
+    }
+
+    /* pas de triangles pour détails à la demande */
+    #expe h1>img, #divers h2>img {
+        display:none;
+    }
+}
+
+/* grand écran */
+@media screen and (min-width:1050px){
+    body{
+        font-size: 16px;
+    }
+}
+
+/* écran std */
+@media screen and (min-width:640px) and (max-width:1049px){
+    body{
+        font-size: 14px;
+    }
+}
+
+/* petit écran et tablettes */
+@media screen and (min-width:400px) and (max-width:639px){
+    body{
+        font-size: 12px;
+    }
+}
